@@ -18,7 +18,7 @@ function App() {
         .filter(item => item !== "");
 
       const res = await axios.post(
-        "http://localhost:3000/bfhl",
+  "https://bajaj-assignment-cqle.onrender.com/bfhl",
         {
           data: arr
         }
