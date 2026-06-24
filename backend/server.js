@@ -8,6 +8,10 @@ app.use(express.json());
 
 const bfhlRoute = require("./routes/bfhl");
 
+app.get("/", (req, res) => {
+    res.send("Bajaj Assignment Backend is Running 🚀");
+});
+
 app.use("/bfhl", bfhlRoute);
 
 const PORT = 3000;
